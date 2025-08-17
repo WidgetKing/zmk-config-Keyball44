@@ -56,50 +56,30 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESCAPE      &kp Q        &kp W               &kp E           &kp R               &kp T                 &kp Y   &kp U                &kp I            &kp O                &kp P          &kp BACKSPACE
-&kp LCTRL       &mt GLOBE A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F  &kp G                 &kp H   &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp SQT
-&kp LEFT_SHIFT  &kp Z        &kp X               &kp C           &kp V               &kp B                 &kp N   &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp RIGHT_SHIFT
-&kp LGUI        &kp LALT     &kp LEFT_SHIFT      &lt 5 SPACE     &lt 4 TAB                      &kp ENTER  &tog 1                                                                            &kp DELETE
+&kp GRAVE   &kp Q        &kp W               &kp E           &kp R               &kp T               &kp Y   &kp U                &kp I            &kp O                &kp P          &none
+&kp ESCAPE  &mt GLOBE A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F  &kp G               &kp H   &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
+&none       &kp Z        &kp X               &kp C           &kp V               &kp B               &kp N   &kp M                &kp COMMA        &kp DOT              &kp SLASH      &none
+&kp LGUI    &kp LALT     &kp LEFT_SHIFT      &kp SPACE       &kp ENTER                      &kp TAB  &tog 1                                                                            &none
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&trans  &mt F1 NUMBER_1  &mt F2 NUMBER_2             &mt NUMBER_3 F3     &mt F4 NUMBER_4       &mt F5 NUMBER_5              &mt F6 NUMBER_6     &mt F7 NUMBER_7  &mt F8 NUMBER_8    &mt F9 NUMBER_9        &mt F10 NUMBER_0  &trans
-&trans  &kp EQUAL        &mt LEFT_CONTROL SEMICOLON  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &trans                       &mt HOME BACKSLASH  &kp MINUS        &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp F11           &trans
-&trans  &trans           &trans                      &trans              &trans                &trans                       &trans              &trans           &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp F12           &trans
-&trans  &trans           &trans                      &trans              &trans                                     &trans  &tog 0                                                                                           &trans
-            >;
-        };
-
-        symbol_layer {
-            label = "SYM";
-            bindings = <
-&none   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT              &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&none   &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                   &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp SQT                &none
-&none   &trans           &trans        &trans        &trans        &trans                   &kp UNDERSCORE  &kp PLUS       &trans            &trans                &kp NON_US_BACKSLASH   &none
-&trans  &trans           &trans        &trans        &trans                         &trans  &trans                                                                                        &trans
-            >;
-        };
-
-        function_layer {
-            label = "FUN";
-            bindings = <
-&none   &kp F1  &kp F2   &kp F3   &kp F4   &none              &none  &none  &none  &none  &none  &none
-&none   &kp F5  &kp F6   &kp F7   &kp F8   &none              &none  &none  &none  &none  &none  &none
-&none   &kp F9  &kp F10  &kp F11  &kp F12  &none              &none  &none  &none  &none  &none  &none
-&trans  &trans  &trans   &trans   &trans              &trans  &mo 3                              &trans
+&bt BT_CLR    &mt F1 NUMBER_1  &mt F2 NUMBER_2             &mt NUMBER_3 F3     &mt F4 NUMBER_4       &mt F5 NUMBER_5              &mt F6 NUMBER_6     &mt F7 NUMBER_7  &mt F8 NUMBER_8    &mt F9 NUMBER_9        &mt F10 NUMBER_0  &kp F11
+&bt BT_SEL 0  &mt GLOBE EQUAL  &mt LEFT_CONTROL SEMICOLON  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &trans                       &mt HOME BACKSLASH  &kp MINUS        &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &mt END SLASH     &kp F12
+&bt BT_SEL 1  &trans           &trans                      &trans              &trans                &trans                       &trans              &trans           &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans            &trans
+&trans        &trans           &trans                      &trans              &trans                                     &trans  &tog 2                                                                                           &tog 0
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &kp N1  &kp N2  &kp N3     &kp N4  &kp N5                 &kp N6         &kp N7          &kp N8          &kp N9           &kp N0     &none
-&none   &trans  &trans  &trans     &trans  &kp SPACE              &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK  &none
-&none   &none   &none   &none      &none   &none                  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &none
-&trans  &trans  &trans  &kp SPACE  &trans                 &trans  &trans                                                                     &none
+&none   &kp N1     &kp N2            &kp N3        &kp N4            &kp N5                 &kp N6         &kp N7          &kp N8          &kp N9           &kp N0     &none
+&none   &kp GLOBE  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp ENTER              &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK  &none
+&none   &none      &none             &none         &none             &none                  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &none
+&trans  &trans     &trans            &kp SPACE     &mo 3                            &trans  &trans                                                                     &tog 0
             >;
         };
 
