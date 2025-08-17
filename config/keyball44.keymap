@@ -56,20 +56,20 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESCAPE      &kp Q        &kp W               &kp E           &kp R               &kp T                 &kp Y            &kp U                &kp I            &kp O                &kp P      &kp BACKSPACE
-&kp LCTRL       &mt GLOBE A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F  &kp G                 &kp H            &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z        &kp X               &kp C           &kp V               &kp B                 &kp N            &kp M                &kp COMMA        &kp DOT              &kp SLASH  &kp RIGHT_SHIFT
-&kp LGUI        &kp LALT     &kp LEFT_SHIFT      &lt 5 SPACE     &lt 4 TAB                      &kp ENTER  &lt 1 BACKSPACE                                                                        &kp DELETE
+&kp ESCAPE      &kp Q        &kp W               &kp E           &kp R               &kp T                 &kp Y   &kp U                &kp I            &kp O                &kp P          &kp BACKSPACE
+&kp LCTRL       &mt GLOBE A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F  &kp G                 &kp H   &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp SQT
+&kp LEFT_SHIFT  &kp Z        &kp X               &kp C           &kp V               &kp B                 &kp N   &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp RIGHT_SHIFT
+&kp LGUI        &kp LALT     &kp LEFT_SHIFT      &lt 5 SPACE     &lt 4 TAB                      &kp ENTER  &tog 1                                                                            &kp DELETE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5              &kp NUMBER_6  &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F10 NUMBER_0  &trans
-&trans  &trans        &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans                    &trans        &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp F11           &trans
-&trans  &trans        &trans            &trans        &trans            &trans                    &trans        &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp F12           &trans
-&trans  &trans        &trans            &trans        &trans                              &trans  &trans                                                                             &trans
+&trans  &mt F1 NUMBER_1  &mt F2 NUMBER_2             &mt NUMBER_3 F3     &mt F4 NUMBER_4       &mt F5 NUMBER_5              &mt F6 NUMBER_6     &mt F7 NUMBER_7  &mt F8 NUMBER_8    &mt F9 NUMBER_9        &mt F10 NUMBER_0  &trans
+&trans  &kp EQUAL        &mt LEFT_CONTROL SEMICOLON  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &trans                       &mt HOME BACKSLASH  &kp MINUS        &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp F11           &trans
+&trans  &trans           &trans                      &trans              &trans                &trans                       &trans              &trans           &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp F12           &trans
+&trans  &trans           &trans                      &trans              &trans                                     &trans  &tog 0                                                                                           &trans
             >;
         };
 
