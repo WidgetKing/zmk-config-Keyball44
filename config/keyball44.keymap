@@ -56,10 +56,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp GRAVE   &kp Q        &kp W               &kp E                           &kp R               &kp T               &kp Y   &kp U                &kp I            &kp O                &kp P          &none
-&kp ESCAPE  &mt GLOBE A  &mt LEFT_CONTROL S  &mt LEFT_ALT D                  &mt LEFT_COMMAND F  &kp G               &kp H   &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
-&none       &kp Z        &kp X               &kp C                           &kp V               &kp B               &kp N   &kp M                &kp COMMA        &kp DOT              &kp SLASH      &none
-&kp LGUI    &kp LALT     &kp LEFT_SHIFT      &mt LA(LS(LEFT_CONTROL)) SPACE  &kp ENTER                      &kp TAB  &tog 1                                                                            &none
+&kp GRAVE     &kp Q            &kp W               &kp E                           &kp R               &kp T               &kp Y   &kp U                &kp I            &kp O                &kp P          &none
+&kp ESCAPE    &mt GLOBE A      &mt LEFT_CONTROL S  &mt LEFT_ALT D                  &mt LEFT_COMMAND F  &kp G               &kp H   &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
+&none         &mt LC(Z) Z      &mt LC(X) X         &mt LC(C) C                     &mt LC(V) V         &kp B               &kp N   &kp M                &kp COMMA        &kp DOT              &kp SLASH      &none
+&kp C_VOL_DN  &kp C_VOLUME_UP  &kp LEFT_SHIFT      &mt LA(LS(LEFT_CONTROL)) SPACE  &kp ENTER                      &kp TAB  &tog 1                                                                            &none
             >;
         };
 
@@ -76,9 +76,9 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &kp N1     &kp N2            &kp N3        &kp N4            &kp N5                 &kp N6         &kp N7          &kp N8          &kp N9           &kp N0     &none
-&none   &kp GLOBE  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp ENTER              &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK  &none
-&none   &none      &none             &none         &none             &none                  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &none
+&trans  &kp N1     &kp N2            &kp N3        &kp N4            &kp N5                 &kp N6         &kp N7          &kp N8          &kp N9           &kp N0     &trans
+&trans  &kp GLOBE  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp ENTER              &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK  &trans
+&trans  &trans     &trans            &trans        &trans            &trans                 &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
 &trans  &trans     &trans            &kp SPACE     &mo 3                            &trans  &trans                                                                     &tog 0
             >;
         };
