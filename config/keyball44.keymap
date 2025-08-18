@@ -50,6 +50,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        close-window {
+            bindings = <&kp LA(F4)>;
+            key-positions = <7 9>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
