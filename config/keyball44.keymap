@@ -80,10 +80,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&bt BT_CLR    &mt F1 NUMBER_1  &mt F2 NUMBER_2             &mt NUMBER_3 F3     &mt F4 NUMBER_4       &mt F5 NUMBER_5              &mt F6 NUMBER_6     &mt F7 NUMBER_7  &mt F8 NUMBER_8    &mt F9 NUMBER_9        &mt F10 NUMBER_0  &kp F11
-&bt BT_SEL 0  &mt GLOBE EQUAL  &mt LEFT_CONTROL SEMICOLON  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &trans                       &mt HOME BACKSLASH  &kp MINUS        &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &mt END SLASH     &kp F12
-&bt BT_SEL 1  &trans           &trans                      &trans              &trans                &trans                       &trans              &trans           &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans            &trans
-&trans        &trans           &trans                      &trans              &trans                                     &trans  &tog 2                                                                                           &tog 0
+&bt BT_CLR    &mt F1 NUMBER_1  &mt F2 NUMBER_2         &mt NUMBER_3 F3     &mt F4 NUMBER_4       &mt F5 NUMBER_5              &mt F6 NUMBER_6     &mt F7 NUMBER_7  &mt F8 NUMBER_8    &mt F9 NUMBER_9        &mt F10 NUMBER_0   &kp F11
+&bt BT_SEL 0  &mt GLOBE SLASH  &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &kp BACKSLASH                &mt HOME BACKSLASH  &kp MINUS        &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &mt END SEMICOLON  &kp F12
+&bt BT_SEL 1  &trans           &trans                  &trans              &trans                &trans                       &trans              &trans           &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans             &trans
+&trans        &trans           &trans                  &trans              &trans                                     &trans  &tog 2                                                                                            &tog 0
             >;
         };
 
