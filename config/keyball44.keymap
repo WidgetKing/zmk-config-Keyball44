@@ -73,7 +73,7 @@
 &kp GRAVE     &kp Q            &kp W               &kp E                           &kp R               &kp T                     &kp Y   &kp U                &kp I            &kp O                &kp P          &bootloader
 &kp ESCAPE    &lt 4 A          &mt LEFT_CONTROL S  &mt LEFT_ALT D                  &mt LEFT_COMMAND F  &mt G GLOBE               &kp H   &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
 &none         &mt LC(Z) Z      &mt LC(X) X         &mt LC(C) C                     &mt LC(V) V         &kp B                     &kp N   &kp M                &kp COMMA        &kp DOT              &kp SLASH      &none
-&kp C_VOL_DN  &kp C_VOLUME_UP  &kp LEFT_SHIFT      &mt LA(LS(LEFT_CONTROL)) SPACE  &kp ENTER                            &kp TAB  &tog 1                                                                            &none
+&kp C_VOL_DN  &kp C_VOLUME_UP  &sk LEFT_SHIFT      &mt LA(LS(LEFT_CONTROL)) SPACE  &kp ENTER                            &kp TAB  &tog 1                                                                            &none
             >;
         };
 
