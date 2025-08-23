@@ -14,13 +14,13 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &lt {
-    tapping-term-ms = <240>;
+    tapping-term-ms = <300>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <200>;
 };
 
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <300>;
     flavor = "tap-preferred";
     quick-tap-ms = <175>;
 };
@@ -48,6 +48,26 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        lmt: lmt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Long Mod Tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            quick-tap-ms = <300>;
+            flavor = "tap-preferred";
+        };
+
+        bmt: bmt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "bootloader-mod";
+            bindings = <&bootloader>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <750>;
+        };
     };
 
     combos {
@@ -62,6 +82,11 @@
             bindings = <&kt LC(LS(LA(F12)))>;
             key-positions = <16 19>;
         };
+
+        panic-return {
+            bindings = <&to 0>;
+            key-positions = <12 23>;
+        };
     };
 
     keymap {
@@ -70,51 +95,51 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp GRAVE     &kp Q            &kp W               &kp E                           &kp R               &kp T                     &kp Y   &kp U                &kp I            &kp O                &kp P          &bootloader
-&kp ESCAPE    &lt 2 A          &mt LEFT_CONTROL S  &mt LEFT_ALT D                  &mt LEFT_COMMAND F  &mt GLOBE G               &kp H   &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
-&kp LS(TAB)   &mt LC(Z) Z      &mt LC(X) X         &mt LC(C) C                     &mt LC(V) V         &kp B                     &kp N   &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp PRINTSCREEN
-&kp C_VOL_DN  &kp C_VOLUME_UP  &kp LEFT_SHIFT      &mt LA(LS(LEFT_CONTROL)) SPACE  &kp ENTER                            &kp TAB  &tog 1                                                                            &kp K_PLAY_PAUSE
+&bmt 0 GRAVE  &kp Q            &kp W               &kp E                           &kp R               &kp T                     &kp Y  &kp U                &kp I            &kp O                &kp P          &bmt 0 PRINTSCREEN
+&kp ESCAPE    &lt 2 A          &mt LEFT_CONTROL S  &mt LEFT_ALT D                  &mt LEFT_COMMAND F  &mt GLOBE G               &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
+&kp LS(TAB)   &lmt LC(Z) Z     &lmt LC(X) X        &lmt LC(C) C                    &lmt LC(V) V        &kp B                     &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
+&kp C_VOL_DN  &kp C_VOLUME_UP  &kp LEFT_SHIFT      &mt LA(LS(LEFT_CONTROL)) SPACE  &kp ENTER                            &kp TAB  &mo 1                                                                            &kp K_PLAY_PAUSE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&trans        &mt F1 NUMBER_1  &mt F2 NUMBER_2         &mt NUMBER_3 F3     &mt F4 NUMBER_4       &mt F5 NUMBER_5              &mt F6 NUMBER_6  &mt F7 NUMBER_7  &mt F8 NUMBER_8   &mt F9 NUMBER_9    &mt F10 NUMBER_0   &kp F11
-&trans        &kp SLASH        &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &mt GLOBE HOME               &kt END          &kp MINUS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mt END SEMICOLON  &kp F12
-&bt BT_CLR    &trans           &trans                  &trans              &trans                &trans                       &trans           &trans           &trans            &trans             &trans             &tog 0
-&bt BT_SEL 0  &bt BT_SEL 1     &trans                  &trans              &trans                                     &trans  &tog 3                                                                                    &tog 0
+&trans        &lmt F1 NUMBER_1  &lmt F2 NUMBER_2        &lmt NUMBER_3 F3    &lmt F4 NUMBER_4      &lmt F5 NUMBER_5              &lmt F6 NUMBER_6  &lmt F7 NUMBER_7  &lmt F8 NUMBER_8  &lmt F9 NUMBER_9   &lmt F10 NUMBER_0  &kp F11
+&trans        &kp SLASH         &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &mt GLOBE HOME                &kt END           &kp MINUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON      &kp F12
+&bt BT_CLR    &trans            &trans                  &trans              &trans                &trans                        &trans            &trans            &trans            &trans             &trans             &to 3
+&bt BT_SEL 0  &bt BT_SEL 1      &trans                  &trans              &trans                                      &trans  &trans                                                                                      &to 0
             >;
         };
 
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans          &kp PAGE_UP    &trans          &trans           &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans          &kp PAGE_DOWN  &trans          &trans           &trans     &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                                                     &trans
+&trans  &trans  &trans            &trans        &trans        &trans                 &trans          &kp PAGE_UP    &trans          &trans           &trans     &trans
+&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp GLOBE              &kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans            &trans        &trans        &trans                 &trans          &kp PAGE_DOWN  &trans          &trans           &trans     &trans
+&trans  &trans  &trans            &trans        &trans                       &trans  &trans                                                                     &trans
             >;
         };
 
-        empty {
+        test {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&kp GRAVE  &kp Q     &kp W   &kp E   &kp R   &kp T              &kp Y   &kp U  &kp I      &kp O    &kp P     &kp EQUAL
+&kp TAB    &kp A     &kp S   &kp D   &kp F   &kp G              &kp H   &kp J  &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z     &kp X   &kp C   &kp V   &kp B              &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LCTRL  &kp LALT  &kp N1  &kp N2  &kp N3             &kp N4  &kp N5                                       &kp BSLH
             >;
 
-            label = "Empty";
+            label = "Test";
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans            &trans        &trans            &trans                 &trans         &trans          &trans          &trans           &trans     &trans
-&trans  &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp GLOBE              &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK  &trans
-&trans  &trans  &trans            &trans        &trans            &trans                 &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &tog 0
-&trans  &trans  &trans            &kp SPACE     &mo 4                            &trans  &trans                                                                     &tog 0
+&trans  &trans  &trans            &trans        &trans            &trans                 &trans  &trans     &trans  &trans     &trans     &trans
+&trans  &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp GLOBE              &trans  &mkp LCLK  &mo 5   &mkp RCLK  &mkp MCLK  &trans
+&trans  &trans  &trans            &trans        &trans            &trans                 &trans  &trans     &trans  &trans     &trans     &tog 4
+&trans  &trans  &trans            &kp SPACE     &trans                           &trans  &trans                                           &to 0
             >;
         };
 
