@@ -92,7 +92,7 @@
             bindings = <
 &trans  &trans  &trans            &trans        &trans            &trans                 &trans         &trans          &trans          &trans           &trans     &trans
 &trans  &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp GLOBE              &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK  &trans
-&trans  &trans  &trans            &trans        &trans            &trans                 &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
+&trans  &trans  &trans            &trans        &trans            &trans                 &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &tog 0
 &trans  &trans  &trans            &kp SPACE     &mo 3                            &trans  &trans                                                                     &tog 0
             >;
         };
