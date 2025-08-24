@@ -141,9 +141,9 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans            &trans        &trans            &trans                    &trans  &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp CAPSLOCK              &trans  &mkp LCLK  &mo 5   &mkp RCLK  &mkp MCLK  &trans
-&trans  &trans  &trans            &trans        &trans            &trans                    &trans  &trans     &trans  &trans     &trans     &tog 4
+&trans  &trans  &trans            &trans        &trans            &trans                    &trans  &trans     &mkp MCLK  &trans     &trans  &trans
+&trans  &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp CAPSLOCK              &trans  &mkp LCLK  &mo 5      &mkp RCLK  &trans  &trans
+&trans  &trans  &trans            &trans        &trans            &trans                    &trans  &trans     &trans     &trans     &trans  &tog 4
 &trans  &trans  &trans            &kp SPACE     &mo 6                               &trans  &trans                                           &to 0
             >;
         };
