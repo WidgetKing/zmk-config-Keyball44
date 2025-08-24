@@ -110,10 +110,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&trans        &lmt F1 NUMBER_1  &lmt F2 NUMBER_2        &lmt F3 NUMBER_3    &lmt F4 NUMBER_4      &lmt F5 NUMBER_5               &lmt F6 NUMBER_6  &lmt F7 NUMBER_7  &lmt F8 NUMBER_8  &lmt F9 NUMBER_9   &lmt F10 NUMBER_0  &kp F11
-&trans        &kp SLASH         &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &mt CAPSLOCK HOME              &kt END           &kp MINUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON      &kp F12
-&bt BT_CLR    &trans            &trans                  &trans              &trans                &trans                         &trans            &trans            &trans            &trans             &trans             &to 2
-&bt BT_SEL 0  &bt BT_SEL 1      &trans                  &trans              &trans                                       &trans  &trans                                                                                      &to 0
+&trans        &lmt F1 NUMBER_1  &lmt F2 NUMBER_2        &lmt F3 NUMBER_3    &lmt F4 NUMBER_4      &lmt F5 NUMBER_5               &lmt F6 NUMBER_6  &lmt F7 NUMBER_7     &lmt F8 NUMBER_8            &lmt F9 NUMBER_9   &lmt F10 NUMBER_0  &kp F11
+&trans        &kp SLASH         &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &mt CAPSLOCK HOME              &kt END           &mt RIGHT_GUI MINUS  &mt RIGHT_ALT LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON      &kp F12
+&bt BT_CLR    &trans            &trans                  &trans              &trans                &trans                         &trans            &trans               &trans                      &trans             &trans             &to 2
+&bt BT_SEL 0  &bt BT_SEL 1      &trans                  &trans              &trans                                       &trans  &trans                                                                                                   &to 0
             >;
         };
 
