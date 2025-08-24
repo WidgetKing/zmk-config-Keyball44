@@ -49,7 +49,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', h: F1}
   - {t: '2', h: F2}
-  - {t: F3, h: '3'}
+  - {t: '3', h: F3}
   - {t: '4', h: F4}
   - {t: '5', h: F5}
   - {t: '6', h: F6}
