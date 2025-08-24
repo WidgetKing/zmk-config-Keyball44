@@ -65,8 +65,8 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-command$$', s: '"'}
   - {t: HOME, h: '$$mdi:apple-keyboard-caps$$'}
   - {t: END, h: toggle}
-  - {t: '-', s: _}
-  - {t: '[', s: '{'}
+  - {t: '-', h: RIGHT GUI, s: _}
+  - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
   - {t: ']', s: '}'}
   - {t: ;, s: ':'}
   - F12
