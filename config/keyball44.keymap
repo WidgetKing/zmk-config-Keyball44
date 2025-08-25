@@ -100,20 +100,20 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&bmt 0 GRAVE  &kp Q            &kp W               &kp E                           &kp R               &kp T                        &kp Y  &kp U                &kp I            &kp O                &kp P          &bmt 0 PRINTSCREEN
-&kp ESCAPE    &lt 3 A          &mt LEFT_CONTROL S  &mt LEFT_ALT D                  &mt LEFT_COMMAND F  &mt CAPSLOCK G               &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
-&kp LS(TAB)   &lmt LC(Z) Z     &lmt LC(X) X        &lmt LC(C) C                    &lmt LC(V) V        &kp B                        &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
-&kp C_VOL_DN  &kp C_VOLUME_UP  &sk LEFT_SHIFT      &mt LA(LS(LEFT_CONTROL)) SPACE  &kp ENTER                               &kp TAB  &mo 1                                                                            &kp GLOBE
+&bmt 0 GRAVE         &kp Q            &kp W               &kp E           &kp R                           &kp T               &kp Y  &kp U                &kp I            &kp O                &kp P          &bmt 0 PRINTSCREEN
+&kp ESCAPE           &mt CAPSLOCK A   &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F              &kp G               &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
+&kp LS(TAB)          &lmt LC(Z) Z     &lmt LC(X) X        &lmt LC(C) C    &lmt LC(V) V                    &kp B               &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
+&mt C_MUTE C_VOL_DN  &kp C_VOLUME_UP  &sk LEFT_SHIFT      &lt 3 SPACE     &mt LS(LA(LEFT_CONTROL)) ENTER             &kp TAB  &mo 1                                                                            &kp GLOBE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&trans        &lmt F1 NUMBER_1  &lmt F2 NUMBER_2        &lmt F3 NUMBER_3    &lmt F4 NUMBER_4      &lmt F5 NUMBER_5               &lmt F6 NUMBER_6  &lmt F7 NUMBER_7     &lmt F8 NUMBER_8            &lmt F9 NUMBER_9   &lmt F10 NUMBER_0  &kp F11
-&trans        &kp SLASH         &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &mt CAPSLOCK HOME              &kt END           &mt RIGHT_GUI MINUS  &mt RIGHT_ALT LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON      &kp F12
-&bt BT_CLR    &trans            &trans                  &trans              &trans                &trans                         &trans            &trans               &trans                      &trans             &trans             &to 2
-&bt BT_SEL 0  &bt BT_SEL 1      &trans                  &trans              &trans                                       &trans  &trans                                                                                                   &to 0
+&trans        &lmt F1 NUMBER_1    &lmt F2 NUMBER_2        &lmt F3 NUMBER_3    &lmt F4 NUMBER_4      &lmt F5 NUMBER_5              &lmt F6 NUMBER_6  &lmt F7 NUMBER_7     &lmt F8 NUMBER_8            &lmt F9 NUMBER_9                 &lmt F10 NUMBER_0       &kp F11
+&trans        &mt CAPSLOCK SLASH  &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &kp HOME                      &kt END           &mt RIGHT_GUI MINUS  &mt RIGHT_ALT LEFT_BRACKET  &mt RIGHT_CONTROL RIGHT_BRACKET  &mt CAPSLOCK SEMICOLON  &kp F12
+&bt BT_CLR    &trans              &trans                  &trans              &trans                &trans                        &trans            &trans               &trans                      &trans                           &trans                  &to 2
+&bt BT_SEL 0  &bt BT_SEL 1        &trans                  &trans              &trans                                      &trans  &trans                                                                                                                      &to 0
             >;
         };
 
@@ -131,10 +131,10 @@
         move_layer {
             label = "MOVE";
             bindings = <
-&trans  &trans  &trans            &trans        &trans        &trans                 &kp HOME        &kp PAGE_UP     &trans        &trans           &trans  &trans
-&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp GLOBE              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans            &trans        &trans        &trans                 &kp END         &kp PAGE_DOWN   &trans        &trans           &trans  &trans
-&trans  &trans  &trans            &trans        &trans                       &trans  &trans                                                                 &trans
+&trans  &trans        &trans            &trans        &trans        &trans                &trans           &kp PAGE_UP     &trans        &trans           &trans   &trans
+&trans  &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp HOME              &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END  &trans
+&trans  &trans        &trans            &trans        &trans        &trans                &trans           &kp PAGE_DOWN   &trans        &trans           &trans   &trans
+&trans  &trans        &trans            &trans        &trans                      &trans  &kp RIGHT_SHIFT                                                          &trans
             >;
         };
 
