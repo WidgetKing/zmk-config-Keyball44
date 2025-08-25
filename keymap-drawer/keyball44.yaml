@@ -14,11 +14,11 @@ layers:
   - P
   - {t: PRINTSCREEN, h: '$$mdi:progress-download$$'}
   - $$mdi:keyboard-esc$$
-  - {t: A, h: MOVE}
+  - {t: A, h: '$$mdi:apple-keyboard-caps$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: G, h: '$$mdi:apple-keyboard-caps$$'}
+  - G
   - H
   - {t: J, h: '$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
@@ -37,11 +37,11 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
-  - $$mdi:volume-low$$
+  - {t: '$$mdi:volume-low$$', h: '$$mdi:volume-off$$'}
   - $$mdi:volume-high$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-space$$', h: 'Alt+Sft+$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-space$$', h: MOVE}
+  - {t: '$$mdi:keyboard-return$$', h: 'Sft+Alt+$$mdi:apple-keyboard-control$$'}
   - $$mdi:keyboard-tab$$
   - NUM
   - GLOBE
@@ -59,16 +59,16 @@ layers:
   - {t: '0', h: F10}
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: /, s: '?'}
+  - {t: /, h: '$$mdi:apple-keyboard-caps$$', s: '?'}
   - {t: '=', h: '$$mdi:apple-keyboard-control$$', s: +}
   - {t: '`', h: '$$mdi:apple-keyboard-option$$', s: '~'}
   - {t: '''', h: '$$mdi:apple-keyboard-command$$', s: '"'}
-  - {t: HOME, h: '$$mdi:apple-keyboard-caps$$'}
+  - HOME
   - {t: END, h: toggle}
   - {t: '-', h: RIGHT GUI, s: _}
   - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: ;, s: ':'}
+  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
+  - {t: ;, h: '$$mdi:apple-keyboard-caps$$', s: ':'}
   - F12
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -142,31 +142,31 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
+  - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - GLOBE
+  - HOME
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - END
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -175,10 +175,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
