@@ -123,7 +123,7 @@
 &trans  &trans        &trans            &trans        &trans        &trans                         &trans          &kp PAGE_UP     &trans        &trans           &trans   &trans
 &trans  &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp HOME                       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END  &trans
 &trans  &trans        &trans            &trans        &trans        &trans                         &trans          &kp PAGE_DOWN   &trans        &trans           &trans   &trans
-&trans  &trans        &trans            &trans        &trans                      &kp RIGHT_SHIFT  &kp LEFT_SHIFT                                                          &trans
+&trans  &trans        &trans            &trans        &trans                      &kp RIGHT_SHIFT  &trans                                                                  &trans
             >;
         };
 
