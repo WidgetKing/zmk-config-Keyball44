@@ -102,7 +102,7 @@
             bindings = <
 &bmt 0 GRAVE         &kp Q            &kp W               &kp E           &kp R                           &kp T               &kp Y  &kp U                &kp I            &kp O                &kp P          &bmt 0 PRINTSCREEN
 &kp ESCAPE           &mt CAPSLOCK A   &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F              &kp G               &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
-&kp LS(TAB)          &kt Z            &kp X               &kp C           &kp V                           &kp B               &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
+&kp LS(TAB)          &kp Z            &kp X               &kp C           &kp V                           &kp B               &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
 &mt C_MUTE C_VOL_DN  &kp C_VOLUME_UP  &sk LEFT_SHIFT      &lt 2 SPACE     &mt LS(LA(LEFT_CONTROL)) ENTER             &kp TAB  &mo 1                                                                            &kp GLOBE
             >;
         };
