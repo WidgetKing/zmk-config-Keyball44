@@ -26,7 +26,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:keyboard-tab-reverse$$
-  - {t: Z, h: toggle}
+  - Z
   - X
   - C
   - V
