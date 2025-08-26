@@ -101,41 +101,41 @@
             label = "QWRT";
             bindings = <
 &bmt 0 GRAVE         &kp Q            &kp W               &kp E           &kp R                           &kp T               &kp Y  &kp U                &kp I            &kp O                &kp P          &bmt 0 PRINTSCREEN
-&kp ESCAPE           &mt CAPSLOCK A   &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F              &kp G               &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp BACKSPACE  &kp DEL
-&kp LS(TAB)          &lmt LC(Z) Z     &lmt LC(X) X        &lmt LC(C) C    &lmt LC(V) V                    &kp B               &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
-&mt C_MUTE C_VOL_DN  &kp C_VOLUME_UP  &sk LEFT_SHIFT      &lt 3 SPACE     &mt LS(LA(LEFT_CONTROL)) ENTER             &kp TAB  &mo 1                                                                            &kp GLOBE
+&kp ESCAPE           &mt CAPSLOCK A   &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F              &kp G               &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
+&kp LS(TAB)          &kt Z            &kp X               &kp C           &kp V                           &kp B               &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
+&mt C_MUTE C_VOL_DN  &kp C_VOLUME_UP  &sk LEFT_SHIFT      &lt 2 SPACE     &mt LS(LA(LEFT_CONTROL)) ENTER             &kp TAB  &mo 1                                                                            &kp GLOBE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&trans        &lmt F1 NUMBER_1    &lmt F2 NUMBER_2        &lmt F3 NUMBER_3    &lmt F4 NUMBER_4      &lmt F5 NUMBER_5              &lmt F6 NUMBER_6  &lmt F7 NUMBER_7     &lmt F8 NUMBER_8            &lmt F9 NUMBER_9                 &lmt F10 NUMBER_0       &kp F11
-&trans        &mt CAPSLOCK SLASH  &mt LEFT_CONTROL EQUAL  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND SQT  &kp HOME                      &kt END           &mt RIGHT_GUI MINUS  &mt RIGHT_ALT LEFT_BRACKET  &mt RIGHT_CONTROL RIGHT_BRACKET  &mt CAPSLOCK SEMICOLON  &kp F12
-&bt BT_CLR    &trans              &trans                  &trans              &trans                &trans                        &trans            &trans               &trans                      &trans                           &trans                  &to 2
-&bt BT_SEL 0  &bt BT_SEL 1        &trans                  &trans              &trans                                      &trans  &trans                                                                                                                      &to 0
+&trans        &kp F1                 &kp F2                     &kp F3                 &kp F4                     &kp F5                    &kp F6        &kp F7                  &kp F8                  &kp F9                      &kp F10                &kp F11
+&trans        &mt CAPSLOCK NUMBER_1  &mt LEFT_CONTROL NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LEFT_COMMAND NUMBER_4  &kp NUMBER_5              &kp NUMBER_6  &mt RIGHT_GUI NUMBER_7  &mt RIGHT_ALT NUMBER_8  &mt RIGHT_CONTROL NUMBER_9  &mt CAPSLOCK NUMBER_0  &kp F12
+&bt BT_CLR    &kp LC(Z)              &kp LC(X)                  &kp LC(C)              &kp LC(V)                  &trans                    &kp EQUAL     &kp MINUS               &kp LEFT_BRACKET        &kp RIGHT_BRACKET           &kp GRAVE              &to 7
+&bt BT_SEL 0  &bt BT_SEL 1           &trans                     &trans                 &trans                                       &trans  &trans                                                                                                           &to 0
             >;
-        };
-
-        test {
-            bindings = <
-&kp GRAVE  &kp Q     &kp W   &kp E   &kp R   &kp T              &kp Y   &kp U  &kp I      &kp O    &kp P     &kp EQUAL
-&kp TAB    &kp A     &kp S   &kp D   &kp F   &kp G              &kp H   &kp J  &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z     &kp X   &kp C   &kp V   &kp B              &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp LCTRL  &kp LALT  &kp N1  &kp N2  &kp N3             &kp N4  &kp N5                                       &kp BSLH
-            >;
-
-            label = "Test";
         };
 
         move_layer {
             label = "MOVE";
             bindings = <
-&trans  &trans        &trans            &trans        &trans        &trans                &trans           &kp PAGE_UP     &trans        &trans           &trans   &trans
-&trans  &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp HOME              &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END  &trans
-&trans  &trans        &trans            &trans        &trans        &trans                &trans           &kp PAGE_DOWN   &trans        &trans           &trans   &trans
-&trans  &trans        &trans            &trans        &trans                      &trans  &kp RIGHT_SHIFT                                                          &trans
+&trans  &trans        &trans            &trans        &trans        &trans                         &trans          &kp PAGE_UP     &trans        &trans           &trans   &trans
+&trans  &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp HOME                       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END  &trans
+&trans  &trans        &trans            &trans        &trans        &trans                         &trans          &kp PAGE_DOWN   &trans        &trans           &trans   &trans
+&trans  &trans        &trans            &trans        &trans                      &kp RIGHT_SHIFT  &kp LEFT_SHIFT                                                          &trans
             >;
+        };
+
+        commands {
+            bindings = <
+&trans  &trans        &trans            &trans        &trans            &trans                      &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &trans       &trans  &trans
+&trans  &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT              &trans      &kp BACKSPACE     &kp DELETE  &key_repeat  &trans  &trans
+&trans  &trans        &trans            &trans        &trans            &trans                      &trans      &trans            &trans      &trans       &trans  &trans
+&trans  &trans        &trans            &trans        &trans                                &trans  &trans                                                         &trans
+            >;
+
+            label = "Commands";
         };
 
         mouse_layer {
@@ -151,10 +151,10 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                        &trans
             >;
         };
 
@@ -167,6 +167,26 @@
             >;
 
             label = "SNIPE";
+        };
+
+        test {
+            bindings = <
+&kp GRAVE  &kp Q     &kp W   &kp E   &kp R   &kp T              &kp Y   &kp U  &kp I      &kp O    &kp P     &kp EQUAL
+&kp TAB    &kp A     &kp S   &kp D   &kp F   &kp G              &kp H   &kp J  &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z     &kp X   &kp C   &kp V   &kp B              &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LCTRL  &kp LALT  &kp N1  &kp N2  &kp N3             &kp N4  &kp N5                                       &kp BSLH
+            >;
+
+            label = "Test";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        command-layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
