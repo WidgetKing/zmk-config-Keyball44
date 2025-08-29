@@ -75,7 +75,7 @@
 
         close-window {
             bindings = <&kp LA(F4)>;
-            key-positions = <7 9>;
+            key-positions = <22 18>;
         };
 
         Mouseless {
@@ -144,7 +144,7 @@
 &trans  &trans  &trans            &trans        &trans            &trans                    &trans  &trans     &mkp MCLK  &trans     &trans  &trans
 &trans  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp CAPSLOCK              &trans  &mkp LCLK  &mo 5      &mkp RCLK  &trans  &trans
 &trans  &trans  &trans            &trans        &trans            &trans                    &trans  &trans     &trans     &trans     &trans  &tog 4
-&trans  &trans  &trans            &kp SPACE     &mo 6                               &trans  &trans                                           &to 0
+&trans  &trans  &trans            &kp SPACE     &mo 6                               &trans  &to 0                                            &to 0
             >;
         };
 
@@ -160,10 +160,10 @@
 
         snipe_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                        &trans
             >;
 
             label = "SNIPE";
