@@ -223,7 +223,7 @@ layers:
   - $$mdi:keyboard-space$$
   - SNIPE
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWRT, h: toggle}
   - {t: QWRT, h: toggle}
   SCROLL:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -290,9 +290,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -361,7 +361,7 @@ layers:
   - {t: '5', s: '%'}
   - {t: \, s: '|'}
 combos:
-- p: [7, 9]
+- p: [22, 18]
   k: Alt+F4
 - p: [16, 19]
   k: {t: Meh+F12, h: toggle}
