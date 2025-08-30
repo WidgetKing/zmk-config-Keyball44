@@ -100,20 +100,20 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&bmt 0 GRAVE         &kp Q            &kp W               &kp E           &kp R                           &kp T               &kp Y  &kp U                &kp I            &kp O                &kp P          &bmt 0 PRINTSCREEN
-&kp ESCAPE           &mt CAPSLOCK A   &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F              &kp G               &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
-&kp LS(TAB)          &kp Z            &kp X               &kp C           &kp V                           &kp B               &kp N  &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
-&mt C_MUTE C_VOL_DN  &kp C_VOLUME_UP  &sk LEFT_SHIFT      &lt 2 SPACE     &mt LS(LA(LEFT_CONTROL)) ENTER             &kp TAB  &mo 1                                                                            &kp GLOBE
+&bmt 0 GRAVE         &kp Q            &kp W               &kp E           &kp R                           &kp T                          &kp Y              &kp U                &kp I            &kp O                &kp P          &bmt 0 PRINTSCREEN
+&kp ESCAPE           &mt CAPSLOCK A   &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_COMMAND F              &mt LEFT_SHIFT G               &mt RIGHT_SHIFT H  &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
+&kp LS(TAB)          &kp Z            &kp X               &kp C           &kp V                           &kp B                          &kp N              &kp M                &kp COMMA        &kp DOT              &kp SLASH      &kp BACKSLASH
+&mt C_MUTE C_VOL_DN  &kp C_VOLUME_UP  &sk LEFT_SHIFT      &lt 2 SPACE     &mt LS(LA(LEFT_CONTROL)) ENTER                        &kp TAB  &mo 1                                                                                        &kp GLOBE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&trans        &kp F1                 &kp F2                     &kp F3                 &kp F4                     &kp F5                    &kp F6        &kp F7                  &kp F8                  &kp F9                      &kp F10                &kp F11
-&trans        &mt CAPSLOCK NUMBER_1  &mt LEFT_CONTROL NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LEFT_COMMAND NUMBER_4  &kp NUMBER_5              &kp NUMBER_6  &mt RIGHT_GUI NUMBER_7  &mt RIGHT_ALT NUMBER_8  &mt RIGHT_CONTROL NUMBER_9  &mt CAPSLOCK NUMBER_0  &kp F12
-&bt BT_CLR    &kp LC(Z)              &kp LC(X)                  &kp LC(C)              &kp LC(V)                  &trans                    &kp EQUAL     &kp MINUS               &kp LEFT_BRACKET        &kp RIGHT_BRACKET           &kp GRAVE              &to 7
-&bt BT_SEL 0  &bt BT_SEL 1           &trans                     &trans                 &trans                                       &trans  &trans                                                                                                           &to 0
+&bt BT_CLR    &kp F1                 &kp F2                     &kp F3                 &kp F4                     &kp F5                               &kp F6                    &kp F7                  &kp F8                  &kp F9                      &kp F10                &kp F11
+&bt BT_SEL 2  &mt CAPSLOCK NUMBER_1  &mt LEFT_CONTROL NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LEFT_COMMAND NUMBER_4  &mt LEFT_SHIFT NUMBER_5              &mt RIGHT_SHIFT NUMBER_6  &mt RIGHT_GUI NUMBER_7  &mt RIGHT_ALT NUMBER_8  &mt RIGHT_CONTROL NUMBER_9  &mt CAPSLOCK NUMBER_0  &kp F12
+&bt BT_SEL 3  &kp LC(Z)              &kp LC(X)                  &kp LC(C)              &kp LC(V)                  &key_repeat                          &kp EQUAL                 &kp MINUS               &kp LEFT_BRACKET        &kp RIGHT_BRACKET           &kp GRAVE              &to 7
+&bt BT_SEL 0  &bt BT_SEL 1           &trans                     &trans                 &trans                                                  &trans  &trans                                                                                                                       &to 0
             >;
         };
 
@@ -141,10 +141,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans            &trans        &trans            &trans                    &trans  &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp CAPSLOCK              &trans  &mkp LCLK  &mo 5      &mkp RCLK  &trans  &trans
-&trans  &trans  &trans            &trans        &trans            &trans                    &trans  &trans     &trans     &trans     &trans  &tog 4
-&trans  &trans  &trans            &kp SPACE     &mo 6                               &trans  &to 0                                            &to 0
+&trans  &trans        &trans            &trans        &trans            &trans                      &trans  &trans     &mkp MCLK  &trans     &trans  &trans
+&trans  &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT              &trans  &mkp LCLK  &mo 5      &mkp RCLK  &trans  &trans
+&trans  &trans        &trans            &trans        &trans            &kp SPACE                   &trans  &trans     &trans     &trans     &trans  &tog 4
+&trans  &trans        &trans            &trans        &mo 6                                 &trans  &to 0                                            &to 0
             >;
         };
 
