@@ -80,7 +80,7 @@ layers:
   - {t: '-', s: _}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '`', s: '~'}
+  - ':'
   - {t: Test, h: toggle}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -120,7 +120,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - CONTEXT MENU
   - HOME
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
@@ -222,7 +222,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - SNIPE
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: MOUSE, h: toggle}
   - {t: QWRT, h: toggle}
   - {t: QWRT, h: toggle}
   SCROLL:
@@ -364,7 +364,7 @@ combos:
 - p: [22, 18]
   k: Alt+F4
 - p: [16, 19]
-  k: {t: Meh+F12, h: toggle}
+  k: {t: KP NUMLOCK, h: toggle}
 - p: [12, 23]
   k: {t: QWRT, h: toggle}
 - p: [7, 8]
