@@ -364,7 +364,7 @@ combos:
 - p: [22, 18]
   k: Alt+F4
 - p: [16, 19]
-  k: {t: KP NUMLOCK, h: toggle}
+  k: Meh+F12
 - p: [12, 23]
   k: {t: QWRT, h: toggle}
 - p: [7, 8]
