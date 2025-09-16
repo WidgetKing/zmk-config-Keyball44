@@ -75,7 +75,7 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - '&key_repeat'
+  - {t: '`', s: '~'}
   - {t: '=', s: +}
   - {t: '-', s: _}
   - {t: '[', s: '{'}
@@ -120,7 +120,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - CONTEXT MENU
+  - MENU
   - HOME
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
@@ -369,3 +369,7 @@ combos:
   k: {t: QWRT, h: toggle}
 - p: [7, 8]
   k: $$mdi:keyboard-esc$$
+- p: [19, 42]
+  k: $$mdi:apple-keyboard-option$$
+- p: [21, 22]
+  k: {t: '''', s: '"'}
