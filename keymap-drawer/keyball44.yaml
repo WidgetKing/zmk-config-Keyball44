@@ -373,3 +373,5 @@ combos:
   k: $$mdi:apple-keyboard-option$$
 - p: [21, 22]
   k: {t: '''', s: '"'}
+- p: [20, 21, 22]
+  k: '|'
