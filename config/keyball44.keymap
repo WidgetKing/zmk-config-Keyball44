@@ -102,6 +102,11 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <21 22>;
         };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <20 21 22>;
+        };
     };
 
     keymap {
