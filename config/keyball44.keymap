@@ -142,12 +142,12 @@
             >;
         };
 
-        commands {
+        NUMPAD {
             bindings = <
-&trans  &trans        &trans            &trans        &trans            &trans                      &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &trans       &trans  &trans
-&trans  &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT              &trans      &kp BACKSPACE     &kp DELETE  &key_repeat  &trans  &trans
-&trans  &trans        &trans            &trans        &trans            &trans                      &trans      &trans            &trans      &trans       &trans  &trans
-&trans  &trans        &trans            &trans        &trans                                &trans  &trans                                                         &trans
+&trans  &trans                    &trans                  &trans              &trans                  &kp INSERT                        &trans                 &trans                   &trans               &trans                         &trans              &trans
+&trans  &mt CAPSLOCK KP_NUMBER_1  &mt LEFT_CONTROL KP_N2  &mt LEFT_ALT KP_N3  &mt LEFT_COMMAND KP_N4  &mt LEFT_SHIFT KP_N5              &mt RIGHT_SHIFT KP_N6  &mt RIGHT_COMMAND KP_N7  &mt RIGHT_ALT KP_N8  &mt RIGHT_CONTROL KP_NUMBER_9  &mt CAPSLOCK KP_N0  &trans
+&trans  &trans                    &trans                  &trans              &trans                  &trans                            &trans                 &trans                   &trans               &trans                         &trans              &trans
+&trans  &trans                    &trans                  &trans              &trans                                            &trans  &trans                                                                                                                  &trans
             >;
 
             label = "Commands";
@@ -196,5 +196,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        numpad {
+            if-layers = <2 1>;
+            then-layer = <3>;
+        };
+    };
 };
