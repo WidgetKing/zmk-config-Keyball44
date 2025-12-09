@@ -141,26 +141,24 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - Ins
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-caps$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:backspace-reverse-outline$$
-  - '&key_repeat'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: KP 1, h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: KP 2, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: KP 3, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: KP 4, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: KP 5, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: KP 6, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: KP 7, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: KP 8, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: KP 9, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: KP 0, h: '$$mdi:apple-keyboard-caps$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -177,8 +175,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
