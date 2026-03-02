@@ -145,10 +145,10 @@
         move_layer {
             label = "MOVE";
             bindings = <
-&trans  &trans        &trans            &trans        &trans        &trans                          &kp HOME        &kp PAGE_UP     &trans        &trans           &trans   &trans
-&trans  &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END  &trans
-&trans  &trans        &trans            &trans        &trans        &kp SPACE                       &kp HOME        &kp PAGE_DOWN   &trans        &trans           &trans   &trans
-&trans  &trans        &trans            &trans        &trans                            &kp DELETE  &kp BACKSPACE                                                           &trans
+&trans           &trans        &trans            &trans        &trans        &trans                          &kp HOME        &kp PAGE_UP     &trans        &trans           &trans   &trans
+&trans           &kp CAPSLOCK  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END  &trans
+&trans           &trans        &trans            &trans        &trans        &kp SPACE                       &kp HOME        &kp PAGE_DOWN   &trans        &trans           &trans   &trans
+&kp C_VOLUME_UP  &kp C_VOL_DN  &trans            &trans        &trans                            &kp DELETE  &kp BACKSPACE                                                           &trans
             >;
         };
 
