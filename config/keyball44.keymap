@@ -22,7 +22,7 @@
 &mt {
     tapping-term-ms = <300>;
     flavor = "tap-preferred";
-    quick-tap-ms = <175>;
+    quick-tap-ms = <150>;
 };
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
