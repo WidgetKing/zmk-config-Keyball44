@@ -377,5 +377,5 @@ combos:
   k: '|'
 - p: [36, 37]
   k: SCROLL
-- p: [36, 37, 38]
+- p: [31, 32]
   k: $$mdi:mouse-scroll-wheel$$
