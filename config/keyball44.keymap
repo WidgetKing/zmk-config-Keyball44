@@ -115,7 +115,7 @@
 
         middle-mouse {
             bindings = <&mkp MCLK>;
-            key-positions = <36 37 38>;
+            key-positions = <31 32>;
         };
     };
 
