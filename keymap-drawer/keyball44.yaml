@@ -379,3 +379,5 @@ combos:
   k: SCROLL
 - p: [31, 32]
   k: $$mdi:mouse-scroll-wheel$$
+- p: [37, 36, 38]
+  k: $$mdi:mouse-scroll-wheel$$
