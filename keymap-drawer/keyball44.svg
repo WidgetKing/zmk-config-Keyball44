@@ -578,7 +578,9 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="602" y="133" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="137" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="616" y="146" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M201,219 l-42,-6" class="combo"/>
@@ -883,7 +885,9 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="602" y="133" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="137" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="616" y="146" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M201,219 l-42,-6" class="combo"/>
@@ -1165,7 +1169,9 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="602" y="133" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="137" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="616" y="146" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M201,219 l-42,-6" class="combo"/>
@@ -1487,7 +1493,9 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="602" y="133" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="137" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="616" y="146" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M201,219 l-42,-6" class="combo"/>
@@ -1771,7 +1779,9 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="602" y="133" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="137" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="616" y="146" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M201,219 l-42,-6" class="combo"/>
@@ -2054,7 +2064,9 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="602" y="133" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="137" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="616" y="146" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M201,219 l-42,-6" class="combo"/>
@@ -2344,7 +2356,9 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="602" y="133" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="137" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="616" y="146" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M201,219 l-42,-6" class="combo"/>
@@ -2639,7 +2653,9 @@ rect.held, rect.combo.held {
 </a></g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="602" y="133" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="607" y="137" height="18" width="18.0" class="combo tap glyph mdi:mouse-scroll-wheel"/>
+<text x="616" y="146" class="combo tap">
+<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M201,219 l-42,-6" class="combo"/>

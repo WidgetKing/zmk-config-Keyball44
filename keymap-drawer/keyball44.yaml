@@ -378,6 +378,6 @@ combos:
 - p: [36, 37]
   k: SCROLL
 - p: [31, 32]
-  k: $$mdi:mouse-scroll-wheel$$
+  k: '&mkp MB4'
 - p: [37, 36, 38]
   k: $$mdi:mouse-scroll-wheel$$
